@@ -1,0 +1,179 @@
+# vim: filetype=i3
+# File originally edited by Marco Vannucci
+#
+# This config file will use environmental variables such as $BROWSER and $TERMINAL.
+# You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
+#
+# export FILE="ranger"
+# export TERMINAL="terminator"
+
+# #---Gaps Definitions---# #
+for_window [class="^.*"] border pixel 2 
+gaps inner 9 
+gaps outer 0
+
+# #---Basic Definitions---# #
+set $term st 
+set $FILE ranger
+set $mod Mod4
+font pango:monospace 8
+focus_follows_mouse no
+exec --no-startup-id /usr/bin/unclutter -b
+exec_always feh --bg-scale /home/marco/Immagini/scale.jpg
+exec --no-startup-id compton
+
+# class                 border  bground text    indicator child_border
+client.focused          #689D6A #282828 #D7D7D7 #689D6A   #689D6A
+client.focused_inactive #282828 #282828 #D7D7D7 #282828   #282828
+client.unfocused        #282828 #222222 #D7D7D7 #282828   #282828
+client.urgent           #282828 #CC241D #D7D7D7 #CC241D   #CC241D
+client.placeholder      #282828 #282828 #D7D7D7 #282828   #282828
+client.background       #282828
+
+bar {
+	colors {
+        	background #282828
+        	statusline #D7D7D7
+        	separator  #D7D7D7
+        	focused_workspace  #282828 #689D6A #D7D7D7
+        	active_workspace   #282828 #222222 #D7D7D7
+        	inactive_workspace #282828 #222222 #D7D7D7
+        	urgent_workspace   #282828 #CC241D #D7D7D7
+        	binding_mode       #282828 #CC241D #D7D7D7
+   }
+	position top
+        status_command i3blocks
+	font pango:mono 8
+	mode dock
+	modifier None
+}
+
+# #---Basic Bindings---# #
+bindsym $mod+Return 		exec $term 
+
+bindsym $mod+Shift+space        floating toggle
+bindsym $mod+space              focus mode_toggle
+
+bindsym $mod+Escape             exec i3lock --color 282828
+bindsym $mod+Shift+Escape       exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# #---Letter Key Bindings---# #
+#TOP/HIDE EVERYTHING:
+bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec --no-startup-id lmc pause ; exec --no-startup-id pauseallmpv; workspace 0; exec $term -e htop ; exec $term -e $FILE
+
+# #---Letter Key Bindings---##
+bindsym $mod+d			exec "dmenu_run -nf '#D7D7D7' -nb '#282828' -sb '#689D6A' -sf '#D7D7D7' -fn 'monospace-9' -p 'dmenu prompt &gt;'" 
+
+bindsym $mod+q			[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus getwindowpid`
+
+bindsym $mod+t			split toggle
+bindsym $mod+Shift+t		gaps inner current set 9; gaps outer current set 0
+
+bindsym $mod+Shift+y		resize shrink width 10 px or 10 ppt	
+
+bindsym $mod+Shift+u		resize shrink height 10 px or 10 ppt
+
+bindsym $mod+i			exec $term -e htop
+bindsym $mod+Shift+i		resize grow height 10 px or 10 ppt	
+
+bindsym $mod+o			sticky toggle
+bindsym $mod+Shift+o		resize grow width 10 px or 10 ppt
+
+bindsym $mod+s			gaps inner current plus 5
+bindsym $mod+Shift+s		gaps inner current minus 5
+
+bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
+
+bindsym $mod+c 			exec gnome-control-center
+bindsym $mod+Shift+c 		reload
+
+bindsym $mod+e 			exec $term -e $FILE 
+
+bindsym $mod+Shift+Return 	exec firefox
+
+bindsym $mod+w 			exec whatsdesk
+
+bindsym $mod+f			fullscreen toggle
+
+bindsym $mod+g			workspace prev
+
+bindsym $mod+h			focus left
+bindsym $mod+Shift+h		move left 30
+bindsym $mod+Ctrl+h		move workspace to output left
+
+bindsym $mod+j			focus down
+bindsym $mod+Shift+j		move down 30
+bindsym $mod+Ctrl+j		move workspace to output down
+
+bindsym $mod+k			focus up
+bindsym $mod+Shift+k		move up 30
+bindsym $mod+Ctrl+k		move workspace to output up
+
+bindsym $mod+l			focus right
+bindsym $mod+Shift+l		move right 30
+bindsym $mod+Ctrl+l		move workspace to output right
+
+bindsym $mod+z			gaps outer current plus 5
+bindsym $mod+Shift+z		gaps outer current minus 5
+
+bindsym $mod+b			bar mode toggle
+
+bindsym $mod+m 			exec foobar2000
+
+# #---Workspace Bindings---# #
+set $ws1 " 1 "
+set $ws2 " 2 "
+set $ws3 " 3 "
+set $ws4 " 4 "
+set $ws5 " 5 "
+set $ws6 " 6 "
+set $ws7 " 7 "
+set $ws8 " 8 "
+set $ws9 " 9 "
+set $ws10 " 10 "
+
+workspace " 1 " output "eDP"
+workspace " 2 " output "eDP"
+workspace " 3 " output "eDP"
+workspace " 4 " output "eDP"
+workspace " 5 " output "eDP"
+workspace " 6 " output "VGA-0"
+workspace " 7 " output "VGA-0"
+workspace " 8 " output "VGA-0"
+workspace " 9 " output "VGA-0"
+workspace " 10 " output "VGA-0"
+
+# switch to workspace
+bindsym $mod+1          workspace $ws1
+bindsym $mod+2          workspace $ws2
+bindsym $mod+3          workspace $ws3
+bindsym $mod+4          workspace $ws4
+bindsym $mod+5          workspace $ws5
+bindsym $mod+6          workspace $ws6
+bindsym $mod+7          workspace $ws7
+bindsym $mod+8          workspace $ws8
+bindsym $mod+9          workspace $ws9
+bindsym $mod+0          workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1    move container to workspace $ws1
+bindsym $mod+Shift+2    move container to workspace $ws2
+bindsym $mod+Shift+3    move container to workspace $ws3
+bindsym $mod+Shift+4    move container to workspace $ws4
+bindsym $mod+Shift+5    move container to workspace $ws5
+bindsym $mod+Shift+6    move container to workspace $ws6
+bindsym $mod+Shift+7    move container to workspace $ws7
+bindsym $mod+Shift+8    move container to workspace $ws8
+bindsym $mod+Shift+9    move container to workspace $ws9
+bindsym $mod+Shift+0    move container to workspace $ws10
+
+assign [class="Gimp"] $ws5
+assign [class="polarr"] $ws5
+assign [class="VirtualBox Manager"] $ws8
+assign [class="whatsdesk"] $ws7
+assign [class="Wine"] $ws10
+assign [class="TelegramDesktop"] $ws7
+
+# #---Function Buttons---# #
+bindsym $mod+F2         restart
