@@ -1,0 +1,207 @@
+# i3 config file (v4)
+
+#Scritto da Marco Vannucci, per Marco Vannucci
+
+# #---Some basics---# #
+
+for_window [class="^.*"] border pixel 2
+gaps inner 14
+gaps outer 5
+
+set $term st
+set $FILE ranger
+set $mod Mod4
+font pango:icnocsolata 8
+focus_follows_mouse no
+
+# class                 border  bground text    indicator child_border
+client.focused          #282828 #282828 #D7D7D7 #689D6A   #689D6A
+client.focused_inactive #282828 #282828 #D7D7D7 #282828   #282828
+client.unfocused        #282828 #222222 #D7D7D7 #282828   #282828
+client.urgent           #282828 #CC241D #D7D7D7 #CC241D   #CC241D
+client.placeholder      #282828 #282828 #D7D7D7 #282828   #282828
+client.background       #282828
+
+#// colore verdolino 689D6A
+
+# #---Automatic Startup or always---# #
+
+#exec_always feh --bg-fill /home/marco/Immagini/Sfondi/Sfondi\ Minimal/Astronauta.png
+#exec_always "setxkbmap -layout it"
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+#exec --no-startup-id picom
+#exec --no-startup-id blueman-applet
+
+# #---Basic Bindings---# #
+
+bindsym $mod+Return             exec i3-sensible-terminal
+bindsym $mod+Shift+Return       exec brave
+
+bindsym $mod+Shift+space        floating toggle
+bindsym $mod+space              focus mode_toggle
+
+bindsym $mod+Escape             exec i3lock --color 698D7A -f
+bindsym $mod+Shift+Escape	exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# #---Function Buttons---# #
+
+bindsym $mod+F1			exec bash .local/bin/prompt "Vuoi spegnere?" "shutdown -h now"
+bindsym $mod+F2			exec bash .local/bin/prompt "Vuoi riavviare?" "reboot"
+bindsym $mod+F3        		exec $term -e nmtui
+bindsym $mod+F5			exec bash .local/bin/displayselect
+bindsym $mod+F9			exec bash .local/bin/audio
+bindsym $mod+F12		exec bash .local/bin/USB
+
+# #---XF86Keys---# #
+
+bindsym XF86MonBrightnessUp 	exec sudo xbacklight -inc 5
+bindsym XF86MonBrightnessDown	exec sudo xbacklight -dec 5
+
+bindsym XF86AudioRaiseVolume	exec "amixer set Master 1%+"
+bindsym XF86AudioLowerVolume	exec "amixer set Master 1%-"
+bindsym XF86AudioMute		exec "amixer set Master toggle"
+
+bindsym XF86AudioPlay		exec "mpc toggle"
+bindsym XF86AudioStop		exec "mpc stop"
+bindsym XF86AudioNext		exec "mpc next"
+bindsym XF86AudioPrev		exec "mpc prev"
+
+# #---Letter Key Bindings---##
+
+#bindsym $mod+a
+#bindsym $mod+Shift+a
+
+bindsym $mod+b			exec "mpc prev"
+#bindsym $mod+Shift+b
+
+bindsym $mod+c			exec .local/load_layout.sh
+bindsym $mod+Shift+c            reload
+
+bindsym $mod+d 			exec "dmenu_run -nf '#D7D7D7' -nb '#282828' -sb '#689D6A' -sf '#D7D7D7' -fn 'monospace-8' -p 'dmenu prompt &gt;'"
+bindsym $mod+Shift+d            gaps inner current set 0; gaps outer current set 0
+
+bindsym $mod+e                  exec $term -e $FILE
+#bindsym $mod+Shift+e
+
+bindsym $mod+f                  fullscreen toggle
+#bindsym $mod+Shift+f
+
+#bindsym $mod+g                  exec .local/groff.sh
+bindsym $mod+Shift+g            exec gimp
+
+bindsym $mod+h                  focus left
+bindsym $mod+Shift+h            move left 30
+bindsym $mod+Ctrl+h             move workspace to output left
+
+bindsym $mod+i                  exec $term -e htop
+bindsym $mod+Shift+i            resize grow height 10 px or 10 ppt
+
+bindsym $mod+j                  focus down
+bindsym $mod+Shift+j            move down 30
+bindsym $mod+Ctrl+j             move workspace to output down
+
+bindsym $mod+k                  focus up
+bindsym $mod+Shift+k            move up 30
+bindsym $mod+Ctrl+k             move workspace to output up
+
+bindsym $mod+l                  focus right
+bindsym $mod+Shift+l            move right 30
+bindsym $mod+Ctrl+l             move workspace to output right
+
+bindsym $mod+m			exec $term -e ncmpcpp
+bindsym $mod+Shift+m            exec .local/deezloader.sh
+
+bindsym $mod+n			exec "mpc next"
+#bindsym $mod+Shift+n
+
+bindsym $mod+o                  sticky toggle
+bindsym $mod+Shift+o            resize shrink width 10 px or 10 ppt
+
+bindsym $mod+p			exec "mpc toggle"
+#bindsym $mod+Shift+p
+bindsym --release $mod+Shift+p	exec scrot -s /home/marco/Immagini/Schermate/n.png
+
+bindsym $mod+q                  [con_id="__focused__" instance="^(?!dropdown_).*$"] kill
+bindsym $mod+Shift+q            [con_id="__focused__" instance="^(?!dropdown_).*$"] exec --no-startup-id kill -9 `xdotool getwindowfocus >
+
+#bindsym $mod+r
+bindsym $mod+Shift+r		restart
+
+#bindsym $mod+s			exec .local/bin/sch "brave -new-window"
+#bindsym $mod+s                  gaps inner current plus 5
+#bindsym $mod+Shift+s            gaps inner current minus 5
+
+bindsym $mod+t                  split toggle
+bindsym $mod+Shift+t            gaps inner current set 14; gaps outer current set 5
+
+#bindsym $mod+u
+bindsym $mod+Shift+u            resize shrink height 10 px or 10 ppt
+
+#bindsym $mod+v
+#bindsym $mod+Shift+v
+
+bindsym $mod+w			exec .local/webapp.sh
+#bindsym $mod+Shift+w
+
+#bindsym $mod+x
+#bindsym $mod+Shift+x
+
+bindsym $mod+y			exec bash .local/bin/youtubedl
+bindsym $mod+Shift+y            resize grow width 10 px or 10 ppt
+
+#bindsym $mod+z                  gaps outer current plus 5
+#bindsym $mod+Shift+z            gaps outer current minus 5
+
+# #---Workspace Bindings---# #
+
+#set $ws1 " 1 "
+#set $ws2 " 2 "
+#set $ws3 " 3 "
+#set $ws4 " 4 "
+#set $ws5 " 5 "
+#set $ws6 " 6 "
+#set $ws7 " 7 "
+#set $ws8 " 8 "
+#set $ws9 " 9 "
+#set $ws10 " 10 "
+
+# select display output
+workspace 1 output "VGA-1"
+workspace 2 output "VGA-1"
+workspace 3 output "VGA-1"
+workspace 4 output "VGA-1"
+workspace 5 output "VGA-1"
+workspace 6 output "eDP-1"
+workspace 7 output "eDP-1"
+workspace 8 output "eDP-1"
+workspace 9 output "eDP-1"
+workspace 10 output "eDP-1"
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+assign [class="Gimp"] workspace 5
+assign [class="Transmission-gtk"] workspace 9
+assign [class="calibre"] workspace 7
