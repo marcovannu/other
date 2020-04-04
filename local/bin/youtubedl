@@ -1,0 +1,14 @@
+#!/bin/bash
+
+choices="1080p\n720p\nDownload"
+
+chosen=$(echo -e "$choices" | dmenu -i -nf '#D7D7D7' -nb '#282828' -sb '#689D6A' -sf '#D7D7D7' -fn 'monospace-8' -p "YouTube Video")
+
+case "$chosen" in
+	1080p)    notify-send -t 8000 "Attendere" " $(xclip -o) in riproduzione 1080p"
+		  mpv --ytdl-format=137+bestaudio/best --fs "$(xclip -o)";;
+	720p)     notify-send -t 8000 "Attendere" "$(xclip -o) in riproduzione 720p"
+		  mpv --ytdl-format=22 --fs "$(xclip -o)";;
+	Download) notify-send -t 3000 "Attendere" "Download $(xclip -o)"
+		  st -e youtube-dl -f=137+bestaudio/best --write-sub "$(xclip -o)"
+esac
