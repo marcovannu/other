@@ -77,12 +77,12 @@ static Key keys[] = {
 
 	{ MODKEY,			XK_F1,	   spawn,	   SHCMD("[ \"$(printf \"No\\nYes\" | dmenu -i -nb darkred -sb red -sf white -nf gray -p \"Shutdown computer?\")\" = Yes ] &&  shutdown -h now") },
 	{ MODKEY,			XK_F2,	   spawn,	   SHCMD("[ \"$(printf \"No\\nYes\" | dmenu -i -nb darkred -sb red -sf white -nf gray -p \"Reboot computer?\")\" = Yes ] && reboot") },
-	{ MODKEY,			XK_F3,		spawn,	   SHCMD("st -e nmtui") },
-	{ MODKEY|ShiftMask,		XK_F3,		spawn,	   SHCMD("st -e nmcli device wifi rescan") },
-	{ MODKEY,			XK_F5,		spawn,	   SHCMD("bash .local/bin/displayselect") },
-	{ MODKEY,			XK_F9,		spawn,	   SHCMD("st -e pamix") },
-	{ MODKEY,			XK_F10,		spawn,	   SHCMD("blueman-manager") },
-	{ MODKEY,			XK_F12,		spawn,	   SHCMD("bash .local/bin/USB") },
+	{ MODKEY,			XK_F3,	   spawn,	   SHCMD("st -e nmtui") },
+	{ MODKEY|ShiftMask,		XK_F3,	   spawn,	   SHCMD("st -e nmcli device wifi rescan") },
+	{ MODKEY,			XK_F5,	   spawn,	   SHCMD("bash .local/bin/displayselect") },
+	{ MODKEY,			XK_F9,	   spawn,	   SHCMD("st -e pulsemixer") },
+	{ MODKEY,			XK_F10,	   spawn,	   SHCMD("blueman-manager") },
+	{ MODKEY,			XK_F12,	   spawn,	   SHCMD("bash .local/bin/USB") },
 
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
@@ -94,7 +94,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("mpc prev") },
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("mpc prev") },
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("mpc toggle") },
-	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("scrot -s /home/marco/Immagini/Schermate/n.png") },
+	{ MODKEY|ShiftMask,             XK_p,      spawn,          SHCMD("bash .local/bin/screenshot") },
+	{ MODKEY|ShiftMask,             XK_r,      quit,           {0} },
 	{ MODKEY,                       XK_m,      spawn,          SHCMD("st -e ncmpcpp") },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          SHCMD("st -e ncmpcpp -s visualizer") },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
@@ -111,7 +112,7 @@ static Key keys[] = {
 	/*{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },*/
 	{ MODKEY,                       XK_f,      fullscreen,     {0} },
 	/*{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },*/
-	{ MODKEY,                       XK_a,  setlayout,      {0} },
+	{ MODKEY,                       XK_a,      setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
@@ -130,7 +131,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY,                       XK_Escape, spawn,          SHCMD("slock") },
-	{ MODKEY|ShiftMask,             XK_Escape, quit,           {0} },
+	{ MODKEY|ShiftMask,             XK_Escape, spawn,	   SHCMD("[ \"$(printf \"No\\nYes\" | dmenu -i -nb darkred -sb red -sf white -nf gray -p \"Close Xorg?\")\" = Yes ] && killall Xorg") },
 };
 
 /* button definitions */
