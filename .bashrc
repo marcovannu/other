@@ -1,19 +1,23 @@
-#
-# ~/.bashrc
-#
+#some defaults
 
-# If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
+PS1='\W \$ '
 
 set -o vi
 
+#aliases
+
 alias vim="nvim"
-alias svim="sudo nvim"
+alias svim="sudoedit"
 alias p="sudo pacman"
 alias fullclean="make clean && rm -f config.h && git reset --hard origin/master"
+alias setbg="~/.local/bin/setbg"
+alias suckmerge="~/.local/bin/suckmerge"
+
+#nnn option cd on quit
 
 n ()
 {
