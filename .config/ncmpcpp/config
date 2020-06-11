@@ -18,7 +18,7 @@ ncmpcpp_directory = ~/.config/ncmpcpp
 ## MPD clients (eg. ncmpc) also use that location.
 ##
 #
-lyrics_directory = ~/.config/lyrics
+lyrics_directory = ~/.local/share/lyrics
 #
 ##### connection settings #####
 #
@@ -80,7 +80,7 @@ mpd_music_dir = ~/musica
 #
 ## Available values: spectrum, wave, wave_filled, ellipse.
 ##
-#visualizer_type = wave
+visualizer_type = spectrum
 #
 #visualizer_look = ●▮
 #
@@ -192,13 +192,13 @@ mpd_music_dir = ~/musica
 #
 #alternative_header_second_line_format = {{$4$b%a$/b$9}{ - $7%b$9}{ ($4%y$9)}}|{%D}
 #
-#current_item_prefix = $(yellow)$r
+current_item_prefix = $(cyan)$r
 #
-#current_item_suffix = $/r$(end)
+current_item_suffix = $/r$(end)
 #
-#current_item_inactive_column_prefix = $(white)$r
+current_item_inactive_column_prefix = $(magenta)$r
 #
-#current_item_inactive_column_suffix = $/r$(end)
+current_item_inactive_column_suffix = $/r$(end)
 #
 #now_playing_prefix = $b
 #
@@ -270,7 +270,7 @@ mpd_music_dir = ~/musica
 ## Note: Custom command that will be executed each time song changes. Useful for
 ## notifications etc.
 ##
-#execute_on_song_change = ""
+#execute_on_song_change = "notify-send "$(mpc --format '%title% \n%artist% - %album%' current)""
 #
 ##
 ## Note: Custom command that will be executed each time player state
@@ -291,9 +291,9 @@ mpd_music_dir = ~/musica
 ##
 ## Note: Possible display modes: classic, columns.
 ##
-#playlist_display_mode = columns
+playlist_display_mode = columns
 #
-#browser_display_mode = classic
+browser_display_mode = columns
 #
 #search_engine_display_mode = classic
 #
@@ -317,7 +317,7 @@ mpd_music_dir = ~/musica
 ## Note: You can specify third character which will be used to build 'empty'
 ## part of progressbar.
 ##
-#progressbar_look = =>
+progressbar_look = ->
 #
 ## Available values: database, playlist.
 ##
@@ -419,7 +419,7 @@ mpd_music_dir = ~/musica
 #
 #display_volume_level = yes
 #
-display_bitrate = no
+display_bitrate = yes
 #
 #display_remaining_time = no
 #
@@ -510,7 +510,7 @@ display_bitrate = no
 #
 #colors_enabled = yes
 #
-#empty_tag_color = cyan
+empty_tag_color = magenta
 #
 #header_window_color = default
 #
@@ -520,19 +520,19 @@ display_bitrate = no
 #
 #state_flags_color = default:b
 #
-#main_window_color = yellow
+main_window_color = white
 #
 #color1 = white
 #
 #color2 = green
 #
-#progressbar_color = black:b
+progressbar_color = black:b
 #
-#progressbar_elapsed_color = green:b
+progressbar_elapsed_color = blue:b
 #
-#statusbar_color = default
+statusbar_color = cyan
 #
-#statusbar_time_color = default:b
+statusbar_time_color = cyan:b
 #
 #player_state_color = default:b
 #
