@@ -1,73 +1,65 @@
-" All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
-" /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
-" you can find below.  If you wish to change any of those settings, you should
-" do it in this file (/etc/vimrc), since archlinux.vim will be overwritten
-" everytime an upgrade of the vim packages is performed.  It is recommended to
-" make changes after sourcing archlinux.vim since it alters the value of the
-" 'compatible' option.
-
-"filetype detect
-
-"enter the current millennium
-set nocompatible
-
-"enable syntax and plugin
-syntax enable
-filetype plugin on
-
-"FINDING FILES
-"Cerca anche nelle sottocartelle
-set path+=**
-
-"Mostra tutti i file cercati con tab e shift tab
-set wildmenu
-
-"filetype plugin indent on
-
-set wildmode=longest,list,full
-
-set splitbelow splitright
-
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages.
-runtime! archlinux.vim
-colo elflord
+" Native config
+	syntax on
+	set encoding=utf-8
+	filetype plugin on
+	set ic
+	set nocompatible
+	set nohlsearch
+	set path+=**
+	set wildmenu
+	set wildmode=longest,list,full
+	set splitbelow splitright
+	set number relativenumber
+	set clipboard=unnamedplus
+	set foldmethod=manual
 
 
-map <F6> :setlocal spell! spelllang=it<CR>
-inoremap <F9> <C-O>za
-nnoremap <F9> za
-onoremap <F9> <C-C>za
-vnoremap <F9> zf
-map <F10> :w! \| !/home/marco/.local/bin/compile <c-r>%<CR>
-map <F11> :!/home/marco/.local/bin/output <c-r>%<CR><CR>
+" Colorscheme
+	colo gruvbox
+	set termguicolors
 
-set number relativenumber
-set clipboard=unnamedplus
+" Gruvbox
+	let g:gruvbox_contrast_dark = 'hard'
+	let g:gruvbox_invert_tabline = '1'
 
-set foldmethod=manual
+" Autocmd
+	autocmd BufWinLeave * mkview
+	autocmd BufWinEnter * silent! loadview
+	autocmd BufWritePre * %s/\s\+$//e
+	autocmd BufWritePost ~/.Xresources,~/Xdefaults !xrdb %
+	autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
+	autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-autocmd BufWinLeave * mkview
-autocmd BufWinEnter * silent! loadview
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
+	autocmd BufWritePre * %s/\s\+$//e
+	autocmd BufWritepre * %s/\n\+\%$//e
 
-autocmd BufWritePre * %s/\s\+$//e
+" Run xrdb whenever Xdefaults or Xresources are updated.
+	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 
-autocmd BufWritePost ~/.Xresources,~/Xdefaults !xrdb %
+" Save file as sudo on files that require root permission
+	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
-" If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
-" Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual
-" and configure vim to your own liking!
+" Shortcutting split navigation, saving a keypress:
+	map <C-h> <C-w>h
+	map <C-j> <C-w>j
+	map <C-k> <C-w>k
+	map <C-l> <C-w>l
 
-" do not load defaults if ~/.vimrc is missing
-"let skip_defaults_vim=1
-
+" Bindings
+	nnoremap S :%s//g<Left><Left>
+	map <F6> :setlocal spell! spelllang=it<CR>
+	inoremap <F9> <C-O>za
+	nnoremap <F9> za
+	onoremap <F9> <C-C>za
+	vnoremap <F9> zf
+	map <F10> :w! \| !/home/marco/.local/bin/compile <c-r>%<CR>
+	map <F11> :!/home/marco/.local/bin/output <c-r>%<CR><CR>
 
 "Special Characters Groff
-
-imap à \(`a
-imap è \(`e
-imap é \('e
-imap ì \(`i
-imap ò \(`o
-imap ù \(`u
-
+"	imap à \(`a
+"	imap è \(`e
+"	imap é \('e
+"	imap ì \(`i
+"	imap ò \(`o
+"	imap ù \(`u
