@@ -7,12 +7,11 @@ base="${file%.*}"
 cd "$dir" || exit
 
 case "$file" in
-	*\.ms)  refer -PS -e "$file" | groff -me -ms -kept -Kutf8 -U > "$base".ps
-		ps2pdf "$base".ps > "$base".pdf ;;
+	*\.ms)  refer -P -e -p ~/documenti/REFERENCES "$file" | groff -me -ms -kept -Kutf8 -U > "$base".ps
+		ps2pdf "$base".ps > "$base".pdf && rm "$base".ps ;;
 	*\.mom) refer -PS -e "$file" | groff -mom -kept -T pdf > "$base".pdf ;;
 	*\.[0-9]) refer -PS -e "$file" | groff -mandoc -T pdf > "$base".pdf ;;
 	*config.h) sudo make install ;;
 	*\.go) go run "$file" ;;
 	*) sed 1q "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;
 esac
-

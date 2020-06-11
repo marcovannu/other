@@ -2,7 +2,7 @@
 
 choices="Mount\nUnmount\nPowerOff"
 
-chosen=$(echo -e "$choices" | dmenu -i -nf '#D7D7D7' -nb '#282828' -sb '#689D6A' -sf '#D7D7D7' -fn 'monospace-8' -p "USB")
+chosen=$(echo -e "$choices" | dmenu -i -p "USB")
 
 case "$chosen" in
 	Mount)  notify-send -t 4000 "USB" "Montando"
