@@ -166,7 +166,7 @@
     #max_icon_size = 32
 
     # Paths to default icons.
-    #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
     ### History ###
 
@@ -276,7 +276,7 @@
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#282828"
-    foreground = "#D7D7D7"
+    foreground = "#ebdbb2"
     frame_color = "#698D7A"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
@@ -284,7 +284,7 @@
 
 [urgency_normal]
     background = "#282828"
-    foreground = "#D7D7D7"
+    foreground = "#ebdbb2"
     frame_color = "#698D7A"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
