@@ -2,23 +2,21 @@
 
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-#PS1='[\u@\h \W]\$ '
-PS1='\W \$ '
+	alias ls='ls --color=auto'
+	#PS1='[\u@\h \W]\$ '
+	PS1='\W \$ '
 
-set -o vi
+	set -o vi
 
 #aliases
-
-alias vim="nvim"
-alias svim="sudoedit"
-alias p="sudo pacman"
-alias fullclean="make clean && rm -f config.h && git reset --hard origin/master"
-alias setbg="~/.local/bin/setbg"
-alias suckmerge="~/.local/bin/suckmerge"
+	alias vim="nvim"
+	alias svim="sudoedit"
+	alias p="sudo pacman"
+	alias scim="sc-im"
+	alias setbg="~/.local/bin/setbg"
+	alias fullclean="make clean && rm -f config.h && git reset --hard origin/master"
 
 #nnn option cd on quit
-
 n ()
 {
     # Block nesting of nnn in subshells
