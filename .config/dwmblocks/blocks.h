@@ -11,6 +11,8 @@ static const Block blocks[] = {
 
 	{"", "ip route get 1 | awk '{print $(NF-2);exit}'",		30,		12},
 
+	/*{"", "~/.local/bin/statusbar/capture",				0,		2},*/
+
 	{"", "~/.local/bin/statusbar/volume",				0,		10},
 
 	{"-[] ", "acpi -b | grep -o 'Charging' | sed 's/Charging/~/' && echo $(acpi -b | grep -o '[0-9]*%')",						10,		0},
