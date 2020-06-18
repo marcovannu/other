@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#mpv --loop-file=inf http://cdn-radar.ilmeteo.it/italy.gif
+#mpv --loop-file=inf http://neige.meteociel.fr/satellite/anim_ir.gif
+
+mpv --loop-file=inf --no-osd-bar https://neige.meteociel.fr/satellite/anim_vis_it.gif &
+mpv --loop-file=inf --no-osd-bar http://allarmi.meteo-allerta.it/images/map/italia_index.png &
+mpv --loop-file=inf --no-osd-bar http://meteocentre.com/analysis/local/eur.gif &
