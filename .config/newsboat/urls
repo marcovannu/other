@@ -1,64 +1,66 @@
 -------NEWSFEEDS--------
-https://andreagaleazzi.com/feed
-http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Faows.co%2Fblog&in_id_or_class=entry-title&url_contains= "~aows"
-https://www.archlinux.org/feeds/news/
-https://artixlinux.org/feed.php
-http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.bladerunion.com%2Fbigwheels&in_id_or_class=entry-title+entry-title-list+p-name&url_contains=
-https://lukesmith.xyz/rss.xml
+http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Faows.co%2Fblog&in_id_or_class=entry-title&url_contains= "~aows" photo
+https://www.archlinux.org/feeds/news/ linux
+https://artixlinux.org/feed.php linux
+http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.bladerunion.com%2Fbigwheels&in_id_or_class=entry-title+entry-title-list+p-name&url_contains= rollerblading
+https://lukesmith.xyz/rss.xml linux tech
+https://newsboat.org/news.atom tech
 https://notrelated.xyz/rss
-https://riccardo.im/index.xml
+http://www.protezionecivile.gov.it/web/guest/dettaglio/-/journal/rss/351563?doAsGroupId=20182&refererPlid=42041&controlPanelCategory=current_site.content&_15_groupId=20182
+https://riccardo.im/index.xml tech
+--------MUSIC------------
+https://pitchfork.com/rss/reviews/albums/ music
+https://pitchfork.com/rss/reviews/best/albums/ music
+-------GITHUB------------
+https://github.com/lukesmithxyz/voidrice/commits/master.atom "~Luke Smith Voidrice" github
+https://github.com/jarun/nnn/commits/master.atom "~nnn file explorer" github
 -------YOUTUBE-----------
-"query:Youtube New:unread = \"yes\"" youtube
--------------------------
-https://www.youtube.com/feeds/videos.xml?channel_id=UCfyEAw41i7PRetP2erYf9dg "~AdaptBrand" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC5yXB_ThsufRJYMRlzIGoeQ "~andreagaleazzi.com" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCDvq7BPaphEIhBlyDN19rvQ "~aows" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCp0VcHDRMfof2wCod5vF6rQ "~Bill Stoppard Skating BSS" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCQhs1oE375c-OlqZGX1EN_A "~Blade In NY" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC4V3oCikXeSqYQr0hBMARwg "~Breaking Italy" youtube
+"query:Youtube New:tags # \"youtube\""
+~~~~~~~~~~~~~~~~~~~~~~~~~
+https://www.youtube.com/feeds/videos.xml?channel_id=UCfyEAw41i7PRetP2erYf9dg "~AdaptBrand" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5yXB_ThsufRJYMRlzIGoeQ "~andreagaleazzi.com" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCDvq7BPaphEIhBlyDN19rvQ "~aows" youtube photo minimalism
+https://www.youtube.com/feeds/videos.xml?channel_id=UCp0VcHDRMfof2wCod5vF6rQ "~Bill Stoppard Skating BSS" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCQhs1oE375c-OlqZGX1EN_A "~Blade In NY" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~Brodie Robertson" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCw3T7SvPYDHCkdMhC0NcKsw "~CKSPACE" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCKpH0CKltc73e4wh0_pgL3g "~Ctrl Shift Face" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCf8PQCxEng0QKXl5pPJydBw "~Deez Skates" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCuUXlTPvHiBTLcTnR1H1pjw "~Dom West" youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCw3T7SvPYDHCkdMhC0NcKsw "~CKSPACE" youtube minimalism
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKpH0CKltc73e4wh0_pgL3g "~Ctrl Shift Face" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCf8PQCxEng0QKXl5pPJydBw "~Deez Skates" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCuUXlTPvHiBTLcTnR1H1pjw "~Dom West" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UChiwLDIBJrV5SxqdixMHmQA "~DRIVETRIBE" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCMKzX5e98bUQBJ2mfhehrPw "~EXPRESS YOUTUBE" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCajXeitgFL-rb5-gXI-aG8Q "~Great Big Story" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCRE3NFNtdjR96-H4QG4U1Fg "~Hex DSL" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC_m8cn_4ekiNv2uG_ZuPTfQ "~knary" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC497r18hyShx1ffsYcgK_kg "~Kuma Films" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Kurzgesagt – In a Nutshell" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCLSh2s2hsYnyhgn_al4B2bw "~Levi Hildebrand" youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS-neBc8xR0pbW6UI-W2pDA "~Escape on skate" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCMKzX5e98bUQBJ2mfhehrPw "~EXPRESS YOUTUBE" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCajXeitgFL-rb5-gXI-aG8Q "~Great Big Story" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCRE3NFNtdjR96-H4QG4U1Fg "~Hex DSL" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_m8cn_4ekiNv2uG_ZuPTfQ "~knary" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UC497r18hyShx1ffsYcgK_kg "~Kuma Films" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Kurzgesagt – In a Nutshell" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCLSh2s2hsYnyhgn_al4B2bw "~Levi Hildebrand" youtube minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UC161MHoBdelWj1ppgUNABAA "~Linked Media" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCoC47do520os_4DBMEFGg4A "~Liziqi" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCBJycsmduvYEL83R_U4JriQ "~Marques Brownlee" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJ24N4O0bP7LGLBDvye7oCA "~Matt D'Avella" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw" youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCoC47do520os_4DBMEFGg4A "~Liziqi" youtube movie minimalism
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJ24N4O0bP7LGLBDvye7oCA "~Matt D'Avella" youtube movie minimalism
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIRiWCPZoUyZDbydIqitHtQ "~Mike Boyd" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCYzMdQa5aD6dnKHLdBxDMkw "~Morten Hilmer" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCGTDZcpOPYLYfUAGz4YdpXg "~Mushroom Blading" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCSuHzQ3GrHSzoBbwrIq3LLA "~Naomi Brockwell" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCaZ_hY8LfwOMR7xoh0mFrXg "~Nazar On Wheels" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC_zQ777U6YTyatP3P1wi3xw "~NEVER TOO SMALL" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCTu40b6bDC8xnpwvC_buzag "~Nick Lomax" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCvj8296fIKXH0dz8D6nyMig "~Nils Jansons" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCNXvxXpDJXp-mZu3pFMzYHQ "~Our Changing Climate" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCzdWnmZgcS6EzgNlf63Fe7A "~Patinaje Total" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC_cMnM6u3xJ3yeW1jzIHgaQ "~Ricardo Lino" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCIdYIrInVnUwHVbogLj6bqA "~Riccardo Palombo" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC_Yi-HfRE0DUXpqe2tNwuzA "~Rob Kellett" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC4BAikpcbJc8b8mupo9GMfQ "~rollerman" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC6F10Qxnf2krAVlBfQ7xNDw "~rollife" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCcyHGNAjMTWAJ_ztX8JbGgQ "~Samuel L. Streetlife" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCUsSCs1s8a4UKmQ0KPQ2ShQ "~Shop Task" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCyp-EzJrdTOd9uNPvmdst-w "~Short of the Week" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZqVfLvSXSGnVT_awp9WBMw "~simply by christine" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCYFgn8_JgaQL1E-N2tg1xcQ "~Synergo" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCxEXniLLVnRE-nvdpX40XMw "~Takeshi Yasutoko" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCs6KfncB4OV6Vug4o_bzijg "~Techlore" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJKLIcSts_4XpVbORwzLZVw "~The Discarded Image" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCo8bcnLyZH8tBIH9V1mLgqQ "~TheOdd1sOut" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCZhZFIx4pwn2r3Vtlp6ugbg "~Too Many Wheels" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCiwUpLaBVzm7fktnvN3r-VA "~Wizard Skating" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "~Wolfgang's Channel" youtube
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYzMdQa5aD6dnKHLdBxDMkw "~Morten Hilmer" youtube photo movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCGTDZcpOPYLYfUAGz4YdpXg "~Mushroom Blading" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCaZ_hY8LfwOMR7xoh0mFrXg "~Nazar On Wheels" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_zQ777U6YTyatP3P1wi3xw "~NEVER TOO SMALL" youtube movie minimalism
+https://www.youtube.com/feeds/videos.xml?channel_id=UCTu40b6bDC8xnpwvC_buzag "~Nick Lomax" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvj8296fIKXH0dz8D6nyMig "~Nils Jansons" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCNXvxXpDJXp-mZu3pFMzYHQ "~Our Changing Climate" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzdWnmZgcS6EzgNlf63Fe7A "~Patinaje Total" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_cMnM6u3xJ3yeW1jzIHgaQ "~Ricardo Lino" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCIdYIrInVnUwHVbogLj6bqA "~Riccardo Palombo" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UC_Yi-HfRE0DUXpqe2tNwuzA "~Rob Kellett" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4BAikpcbJc8b8mupo9GMfQ "~rollerman" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UC6F10Qxnf2krAVlBfQ7xNDw "~rollife" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUsSCs1s8a4UKmQ0KPQ2ShQ "~Shop Task" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCyp-EzJrdTOd9uNPvmdst-w "~Short of the Week" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYFgn8_JgaQL1E-N2tg1xcQ "~Synergo" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCxEXniLLVnRE-nvdpX40XMw "~Takeshi Yasutoko" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCs6KfncB4OV6Vug4o_bzijg "~Techlore" youtube tech
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJKLIcSts_4XpVbORwzLZVw "~The Discarded Image" youtube movie
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZhZFIx4pwn2r3Vtlp6ugbg "~Too Many Wheels" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCiwUpLaBVzm7fktnvN3r-VA "~Wizard Skating" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg "~Wolfgang's Channel" youtube tech
