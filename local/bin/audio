@@ -1,6 +1,6 @@
 #!/bin/bash
 
-choices="HDMI\nDAC-X6\nDuplex\nManualmente\nOff"
+choices="HDMI\nDAC-X6\nDAC-X6-2\nDuplex\nManualmente\nOff"
 
 chosen=$(echo -e "$choices" | dmenu -i -p "Outputs")
 
@@ -13,10 +13,15 @@ case "$chosen" in
 		pacmd set-card-profile 1 output:analog-stereo
 		pacmd set-card-profile 0 off
 		pacmd set-card-profile 2 off;;
+	DAC-X6-2) notify-send -t 4000 "Output Audio" "DAC-X6 -2"
+		pacmd set-card-profile 3 output:analog-stereo
+		pacmd set-card-profile 0 off
+		pacmd set-card-profile 2 off;;
 	Duplex) notify-send -t 4000 "Output Audio" "Duplex"
 		pacmd set-card-profile 2 output:analog-stereo+input:analog-stereo
 		pacmd set-card-profile 0 off
-		pacmd set-card-profile 1 off;;
+		pacmd set-card-profile 1 off
+		pacmd set-card-profile 3 off;;
    Manualmente) st -e pamix;;
        	Off)    notify-send -t 4000 "Output Audio" "Duplex"
 		pacmd set-card-profile 2 off

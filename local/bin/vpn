@@ -1,0 +1,14 @@
+#!/bin/sh
+
+choices="UP\nDown"
+
+chosen=$(echo -e "$choices" | dmenu -i -p "Surfshark Vpn")
+
+case "$chosen" in
+	UP) st -e sudo surfshark-vpn attack &&
+	    sleep 15
+	    pkill -RTMIN+12 dwmblocks;;
+	Down) st -e sudo surfshark-vpn down &&
+	    sleep 1
+ 	    pkill -RTMIN+12 dwmblocks;;
+esac
