@@ -15,7 +15,7 @@ https://pitchfork.com/rss/reviews/best/albums/ music
 https://github.com/lukesmithxyz/voidrice/commits/master.atom "~Luke Smith Voidrice" github
 https://github.com/jarun/nnn/commits/master.atom "~nnn file explorer" github
 -------YOUTUBE-----------
-"query:Youtube New:tags # \"youtube\""
+"query:Youtube New:tags # \"youtube\"" youtube
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfyEAw41i7PRetP2erYf9dg "~AdaptBrand" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5yXB_ThsufRJYMRlzIGoeQ "~andreagaleazzi.com" youtube tech
@@ -31,11 +31,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UChiwLDIBJrV5SxqdixMHmQA "~D
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS-neBc8xR0pbW6UI-W2pDA "~Escape on skate" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMKzX5e98bUQBJ2mfhehrPw "~EXPRESS YOUTUBE" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCajXeitgFL-rb5-gXI-aG8Q "~Great Big Story" youtube movie
-https://www.youtube.com/feeds/videos.xml?channel_id=UCRE3NFNtdjR96-H4QG4U1Fg "~Hex DSL" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_m8cn_4ekiNv2uG_ZuPTfQ "~knary" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UC497r18hyShx1ffsYcgK_kg "~Kuma Films" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Kurzgesagt – In a Nutshell" youtube movie
-https://www.youtube.com/feeds/videos.xml?channel_id=UCLSh2s2hsYnyhgn_al4B2bw "~Levi Hildebrand" youtube minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UC161MHoBdelWj1ppgUNABAA "~Linked Media" youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCoC47do520os_4DBMEFGg4A "~Liziqi" youtube movie minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" youtube tech
