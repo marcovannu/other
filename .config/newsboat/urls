@@ -3,6 +3,7 @@ http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Faows.co%2Fblog&i
 https://www.archlinux.org/feeds/news/ linux
 https://artixlinux.org/feed.php linux
 http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.bladerunion.com%2Fbigwheels&in_id_or_class=entry-title+entry-title-list+p-name&url_contains= rollerblading
+https://jami.net/rss/
 https://lukesmith.xyz/rss.xml linux tech
 https://newsboat.org/news.atom tech
 https://notrelated.xyz/rss
@@ -27,7 +28,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCw3T7SvPYDHCkdMhC0NcKsw "~C
 https://www.youtube.com/feeds/videos.xml?channel_id=UCKpH0CKltc73e4wh0_pgL3g "~Ctrl Shift Face" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCf8PQCxEng0QKXl5pPJydBw "~Deez Skates" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCuUXlTPvHiBTLcTnR1H1pjw "~Dom West" youtube rollerblading
-https://www.youtube.com/feeds/videos.xml?channel_id=UChiwLDIBJrV5SxqdixMHmQA "~DRIVETRIBE" youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS-neBc8xR0pbW6UI-W2pDA "~Escape on skate" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCMKzX5e98bUQBJ2mfhehrPw "~EXPRESS YOUTUBE" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCajXeitgFL-rb5-gXI-aG8Q "~Great Big Story" youtube movie
@@ -35,7 +35,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC_m8cn_4ekiNv2uG_ZuPTfQ "~k
 https://www.youtube.com/feeds/videos.xml?channel_id=UC497r18hyShx1ffsYcgK_kg "~Kuma Films" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Kurzgesagt – In a Nutshell" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UC161MHoBdelWj1ppgUNABAA "~Linked Media" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UCoC47do520os_4DBMEFGg4A "~Liziqi" youtube movie minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCJ24N4O0bP7LGLBDvye7oCA "~Matt D'Avella" youtube movie minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw" youtube tech
@@ -43,11 +42,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCIRiWCPZoUyZDbydIqitHtQ "~M
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYzMdQa5aD6dnKHLdBxDMkw "~Morten Hilmer" youtube photo movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCGTDZcpOPYLYfUAGz4YdpXg "~Mushroom Blading" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCaZ_hY8LfwOMR7xoh0mFrXg "~Nazar On Wheels" youtube rollerblading
-https://www.youtube.com/feeds/videos.xml?channel_id=UC_zQ777U6YTyatP3P1wi3xw "~NEVER TOO SMALL" youtube movie minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UCTu40b6bDC8xnpwvC_buzag "~Nick Lomax" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvj8296fIKXH0dz8D6nyMig "~Nils Jansons" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCNXvxXpDJXp-mZu3pFMzYHQ "~Our Changing Climate" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzdWnmZgcS6EzgNlf63Fe7A "~Patinaje Total" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvi4rHnltt2-8VLUBQa7rdg "~Renato Pennuti" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_cMnM6u3xJ3yeW1jzIHgaQ "~Ricardo Lino" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIdYIrInVnUwHVbogLj6bqA "~Riccardo Palombo" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_Yi-HfRE0DUXpqe2tNwuzA "~Rob Kellett" youtube rollerblading
