@@ -3,14 +3,10 @@ http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Faows.co%2Fblog&i
 https://www.archlinux.org/feeds/news/ linux
 https://artixlinux.org/feed.php linux
 http://createfeed.fivefilters.org/extract.php?url=https%3A%2F%2Fwww.bladerunion.com%2Fbigwheels&in_id_or_class=entry-title+entry-title-list+p-name&url_contains= rollerblading
-https://jami.net/rss/
 https://lukesmith.xyz/rss.xml linux tech
-https://newsboat.org/news.atom tech
-https://notrelated.xyz/rss
 http://www.protezionecivile.gov.it/web/guest/dettaglio/-/journal/rss/351563?doAsGroupId=20182&refererPlid=42041&controlPanelCategory=current_site.content&_15_groupId=20182
 https://riccardo.im/index.xml tech
 --------MUSIC------------
-https://pitchfork.com/rss/reviews/albums/ music
 https://pitchfork.com/rss/reviews/best/albums/ music
 -------GITHUB------------
 https://github.com/lukesmithxyz/voidrice/commits/master.atom "~Luke Smith Voidrice" github
@@ -22,10 +18,8 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCfyEAw41i7PRetP2erYf9dg "~A
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5yXB_ThsufRJYMRlzIGoeQ "~andreagaleazzi.com" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDvq7BPaphEIhBlyDN19rvQ "~aows" youtube photo minimalism
 https://www.youtube.com/feeds/videos.xml?channel_id=UCp0VcHDRMfof2wCod5vF6rQ "~Bill Stoppard Skating BSS" youtube rollerblading
-https://www.youtube.com/feeds/videos.xml?channel_id=UCQhs1oE375c-OlqZGX1EN_A "~Blade In NY" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~Brodie Robertson" youtube
 https://www.youtube.com/feeds/videos.xml?channel_id=UCw3T7SvPYDHCkdMhC0NcKsw "~CKSPACE" youtube minimalism
-https://www.youtube.com/feeds/videos.xml?channel_id=UCKpH0CKltc73e4wh0_pgL3g "~Ctrl Shift Face" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCf8PQCxEng0QKXl5pPJydBw "~Deez Skates" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCuUXlTPvHiBTLcTnR1H1pjw "~Dom West" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCS-neBc8xR0pbW6UI-W2pDA "~Escape on skate" youtube rollerblading
@@ -35,10 +29,11 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UC_m8cn_4ekiNv2uG_ZuPTfQ "~k
 https://www.youtube.com/feeds/videos.xml?channel_id=UC497r18hyShx1ffsYcgK_kg "~Kuma Films" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsXVk37bltHxD1rDPwtNM8Q "~Kurzgesagt – In a Nutshell" youtube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UC161MHoBdelWj1ppgUNABAA "~Linked Media" youtube
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" youtube tech
-https://www.youtube.com/feeds/videos.xml?channel_id=UCJ24N4O0bP7LGLBDvye7oCA "~Matt D'Avella" youtube movie minimalism
+https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2 "~Luke Smith" peertube tech
+https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=982 "~Luke Smith documentaries" peertube movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIRiWCPZoUyZDbydIqitHtQ "~Mike Boyd" youtube
+https://vimeo.com/mtorres983/videos/rss "~Mike Torres" vimeo rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYzMdQa5aD6dnKHLdBxDMkw "~Morten Hilmer" youtube photo movie
 https://www.youtube.com/feeds/videos.xml?channel_id=UCGTDZcpOPYLYfUAGz4YdpXg "~Mushroom Blading" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCaZ_hY8LfwOMR7xoh0mFrXg "~Nazar On Wheels" youtube rollerblading
@@ -50,6 +45,7 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCvi4rHnltt2-8VLUBQa7rdg "~R
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_cMnM6u3xJ3yeW1jzIHgaQ "~Ricardo Lino" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCIdYIrInVnUwHVbogLj6bqA "~Riccardo Palombo" youtube tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UC_Yi-HfRE0DUXpqe2tNwuzA "~Rob Kellett" youtube rollerblading
+https://www.youtube.com/feeds/videos.xml?channel_id=UCmQDImJbMXva_ZMMGvMzYmw "~Rollerblading" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UC4BAikpcbJc8b8mupo9GMfQ "~rollerman" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6F10Qxnf2krAVlBfQ7xNDw "~rollife" youtube rollerblading
 https://www.youtube.com/feeds/videos.xml?channel_id=UCUsSCs1s8a4UKmQ0KPQ2ShQ "~Shop Task" youtube rollerblading
