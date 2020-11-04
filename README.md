@@ -1,5 +1,5 @@
 # other
-archrice
+
 
 Here you can find some of my unused programs config
 
