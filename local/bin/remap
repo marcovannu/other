@@ -1,6 +1,0 @@
-#!/bin/sh
-
-xset r rate 300 50
-setxkbmap -layout us,it -option grp:ctrl_alt_toggle
-setxkbmap -option caps:swapescape
-xmodmap -e 'keycode 135 = Super_R'
