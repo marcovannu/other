@@ -1,3 +1,0 @@
-#!/bin/sh
-
-scrot -s /home/marco/immagini/schermate/n.png
