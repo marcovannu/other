@@ -1,6 +1,0 @@
-#!/bin/sh
-
-for a in *.flac; do
-  f="${a[@]/%flac/mp3}"
-  ffmpeg -i "$a" -qscale:a 0 "$f"
-done
