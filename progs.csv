@@ -44,6 +44,7 @@ A,sc-im,"is an Excel-like terminal spreadsheet manager"
 	,zathura,"is a pdf viewer with vim-like bindings"
 	,zathura-pdf-poppler,
 	,pdftk,"pdfs manipulation tool"
+	,fzf,"is a fuzzy finder tool"
 	,xorg-xbacklight,"enables changing screen brightness levels"
 	,transmission-gtk,"for torrenting"
 	,zsh-completions,"provides some level of auto-completion"
