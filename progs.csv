@@ -43,7 +43,7 @@ A,telegram-tg,"telegram client"
 	,groff,"front-end for the groff documento formatting system"
 	,tlp,"apply laptop power saving settings"
 	,udisks2,"interfaces to enumerate and perform operations on disks and storage devices"
-	,youtube-dl,"can download any YouTube video (or playlist of channel) when given the link"
+	,yt-dlp,"can download any YouTube video (or playlist of channel) when given the link"
 A,youtube-viewer,"youtube for command line"
 	,zathura,"is a pdf viewer with vim-like bindings"
 	,zathura-pdf-poppler,
