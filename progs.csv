@@ -8,6 +8,7 @@
 	,ttf-linux-libertine,"font"
 	,noto-fonts,"font"
 	,arandr,"is a UI for screen adjustment"
+	,calcurse, "is a calendar for your terminal"
 	,dunst,"is a suckless notification system"
 	,exfat-utils,"allows management of FAT drives"
 	,dosfstools,"assows your computer to access dos-like filesystems"
